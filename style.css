@@ -4,6 +4,7 @@ body {
 
 .centered-box {
   display: flex;
+  align-items: center;
   background-color: gold;
   position: absolute;
   top: 50%;
@@ -13,5 +14,5 @@ body {
 }
 
 .testing_big_parens {
-  font-size: 72px;
+  font-size: 272px;
 }
