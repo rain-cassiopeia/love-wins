@@ -3,10 +3,15 @@ body {
 }
 
 .centered-box {
-  background-color: red;
+  display: flex;
+  background-color: gold;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
+}
+
+.testing_big_parens {
+  font-size: 72px;
 }
