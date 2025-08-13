@@ -2,5 +2,16 @@ const first = ["bird", "love", "hate", "evil", "road", "stop", "butt", "stay", "
 
 const second = ["cock", "wins", "wins", "twin", "kill", "sign", "plug", "away", "span", "soap", "jugs", "jobs", "cock", "jobs", "jobs", "dick", "boys", "milk", "mail", "quit", "more", "line", "time", "bait", "bone", "head", "bone", "feet", "claw", "to work", "ends", "dads", "woof", "more", "love", "bike", "lane", "sale", "line", "mine", "path", "legs", "time", "goat", "hair", "hole", "golf", "bags", "core", "five", "outs", "of bred", "brew", "boar", "fast", "cuts", "worm", "worm", "ball", "ball", "ball", "ball", "next", "well", "play", "tops", "town", "toes", "over", "tags", "fans", "noir", "card", "stew", "turn", "page", "door", "ice!", "yung", "bung", "bird", "shoe", "pack", "wife", "gang", "fail", "edit", "room", "hand", "tees", "fire", "head", "spot", "lock", "tops", "wave", "of meat", "mark", "cans", "guy?", "cobs", "flop", "sign", "here", "head", "meal", "book", "buds", "drop", "nude", "pics", "bags", "musk", "much", "help", "drop", "gold", "food", "them", "moon", "door", "poop", "line", "line", "mark", "bark", "head", "of ribs", "of rats", "nest", "pile", "boot", "chop", "rage", "chin", "cans", "loss", "lace", "wolf", "rack", "rack", "rack", "ring", "worm", "wash", "nail", "file", "vera", "lift", "lift", "ball", "worm", "heel", "head", "yeah", "teen", "bite", "of wind", "of love", "shit", "beer", "tail", "mitt", "lamp", "wich", "wich", "mate", "time", "down", "club", "nuts", "hope", "hang", "font", "tide", "nook", "legs", "ache", "bump", "hair", "sock", "liar", "over", "page", "dive", "dive", "deck", "wifi", "chat", "lash", "bill", "tape", "flow", "head", "flow", "work", "back", "tell", "back", "is more", "find", "bird", "is good", "is shit", "is life", "sake", "seek", "cock", "sake", "moss", "knob", "warm", "lock", "cart", "game", "game", "view", "coal", "is more", "robe", "meat", "room", "claw", "kink", "down", "it easy", "home", "wave", "hair", "code", "word", "code", "chip", "chip", "news", "lord", "marx", "gold", "cool", "yeah", "poke", "coin", "food"];
 
-const index = 1
+var index = 1;
+const length = 243;
+
+spin();
+
+function spin() {
+  const fists = document.getElementsByClassName("fist");
+  fists[0].innerHTML = first[index];
+  fists[1].innerHTML = second[index];
+};
+
+function randomize() {index = Math.floor(Math.random() * (length + 1));};
 
