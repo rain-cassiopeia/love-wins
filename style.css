@@ -3,20 +3,31 @@ body {
 }
 
 .centered-box {
-  display: flex;
-  align-items: center;
+  min-width: 170px;
+  min-height: 50px;
   background-color: gold;
   position: absolute;
+/*  center it in the page  */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+/*  rounded edges  */
   border-radius: 5px;
 }
 
 .fist {
-  font-size: xx;
+/*   margin-top: -12px; */
+  
+  font-size: 32px;
+  line-height: 50px;
   color: blue;
   padding: 10px;
+  width: 50%; 
+  height: 50px;
+  box-sizing: border-box; /* Includes padding and border in the width */
+  float: left; /* makes them go next to each other? */
+  overflow: visible; /* lets text go past */
+  white-space: nowrap;
   word-spacing: 15px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -27,8 +38,10 @@ body {
 .fist--left {
   @extend .fist;
   color: red;
+  text-align: right;
 }
 
 .fist--right {
   @extend .fist;
+  
 }
