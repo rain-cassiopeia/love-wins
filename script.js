@@ -28,8 +28,8 @@ spin2();
 
 function spin2() {
   //the 12 accounts for centering in the box
-  let offset1 = getRandomNumberWithStep(-150, 150, 10)
-  let offset2 = getRandomNumberWithStep(-150, 150, 10)
+  let offset1 = getOffset()
+  let offset2 = getOffset()
   gsap.set(".fist--left", {y: ((index + offset1) * -50) - 12})
   gsap.to(".fist--left", {y: (index * -50)-12, duration: 2})
   gsap.set(".fist--right", {y: ((index + offset2) * -50) - 12})
@@ -42,16 +42,7 @@ function randomize() {index = Math.floor(Math.random() * (length + 1)) + length;
 
 
 
-//why the FUCK is this not built in jesus christ
-function getRandomNumberWithStep(min, max, step) {
-  if (step <= 0) {
-    throw new Error("Step must be a positive number.");
-  }
-  if (min > max) {
-    throw new Error("Min must be less than or equal to max.");
-  }
-
-  const numSteps = Math.floor((max - min) / step);
-  const randomStepCount = Math.floor(Math.random() * (numSteps + 1)); // +1 to include max if it aligns with the step
-  return min + (randomStepCount * step);
+function getOffset() {
+  let t = [-100,-90,-80,-70,-60,-50,-40,-30,-20,30,40,50,60,70,80,90,100]
+  return t[Math.floor(Math.random() * 17)]
 }
