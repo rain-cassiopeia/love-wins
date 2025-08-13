@@ -13,7 +13,22 @@ body {
   border-radius: 5px;
 }
 
-.testing_big_parens {
+.fist {
   font-size: xx;
-  color: #fff;
+  color: blue;
+  padding: 10px;
+  word-spacing: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fist--left {
+  @extend .fist;
+  color: red;
+}
+
+.fist--right {
+  @extend .fist;
 }
