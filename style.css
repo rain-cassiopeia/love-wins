@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(50, 97, 45, 1); /* perhaps basil is better? */
+  background: rgb(52, 100, 40);
 }
 
 .daddy-box{
@@ -12,16 +12,30 @@ body {
 }
 
 .centered-box {
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.5));
   min-width: 250px;
   min-height: 50px;
-  background-color: gold;
+/*   background-image: url(https://www.pngkey.com/png/full/101-1012700_white-transparent-paint-white-paint-streak-png.png);
+  background-size: cover; */
+  background-color: rgb(58, 99, 46);
 /*   position: absolute; */
 /*  center it in the page  */
 /*   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
 /*  rounded edges  */
-  border-radius: 5px;
+  border-radius: 20px;
+  transition: background-color 0.5s;
+}
+
+.centered-box:hover {
+  cursor: pointer;
+  background-color: rgb(78, 125, 64);
+}
+
+.centered-box:active {
+  background-color: rgb(79, 115, 63);
+  transition: none
 }
 
 .fist {
@@ -60,16 +74,16 @@ body {
 
 .gradient-box--top {
   @extend .gradient-box;
-  background: linear-gradient(to bottom, rgba(50, 97, 45, 1), rgba(50, 97, 45, 0));
+  background: linear-gradient(to bottom, rgba(52, 100, 40, 1), rgba(52, 100, 40, 0));
 }
 
 .gradient-box--bottom {
   @extend .gradient-box;
-  background: linear-gradient(to top, rgba(50, 97, 45, 1), rgba(50, 97, 45, 0));
+  background: linear-gradient(to top, rgba(52, 100, 40, 1), rgba(52, 100, 40, 0));
 }
 
 .blank-box {
-  background-color: rgba(50, 97, 45, 1);
+  background-color: rgb(52, 100, 40);
   height: 100vh;
   z-index: 98;
 }
