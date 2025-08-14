@@ -1,16 +1,25 @@
 body {
-  background-color: #32612D; /* perhaps basil is better? */
+  background-color: rgba(50, 97, 45, 1); /* perhaps basil is better? */
 }
 
-.centered-box {
-  min-width: 170px;
-  min-height: 50px;
-  background-color: gold;
-  position: absolute;
-/*  center it in the page  */
+.daddy-box{
+  display: flex;
+  flex-direction: column;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.centered-box {
+  min-width: 250px;
+  min-height: 50px;
+  background-color: gold;
+/*   position: absolute; */
+/*  center it in the page  */
+/*   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 /*  rounded edges  */
   border-radius: 5px;
 }
@@ -43,5 +52,24 @@ body {
 
 .fist--right {
   @extend .fist;
-  
+}
+
+.gradient-box {
+  z-index: 99;
+}
+
+.gradient-box--top {
+  @extend .gradient-box;
+  background: linear-gradient(to bottom, rgba(50, 97, 45, 1), rgba(50, 97, 45, 0));
+}
+
+.gradient-box--bottom {
+  @extend .gradient-box;
+  background: linear-gradient(to top, rgba(50, 97, 45, 1), rgba(50, 97, 45, 0));
+}
+
+.blank-box {
+  background-color: rgba(50, 97, 45, 1);
+  height: 100vh;
+  z-index: 98;
 }
