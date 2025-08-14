@@ -1,5 +1,6 @@
 body {
   background: rgb(52, 100, 40);
+  overflow: hidden;
 }
 
 .daddy-box{
