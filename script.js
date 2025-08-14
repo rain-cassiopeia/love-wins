@@ -12,7 +12,7 @@ var second_str = "";
 for (let i = 0; i < length * 3; i++) {
   first_str += first[i] + "<br>"
   second_str += second[i] + "<br>"
-};
+}
 
 const fists = document.getElementsByClassName("fist");
 fists[0].innerHTML = first_str;
@@ -34,15 +34,22 @@ function spin2() {
   gsap.to(".fist--left", {y: (index * -50)-12, duration: 2})
   gsap.set(".fist--right", {y: ((index + offset2) * -50) - 12})
   gsap.to(".fist--right", {y: (index * -50)-12, duration: 2})
-};
+}
 
-function randomize() {index = Math.floor(Math.random() * (length + 1)) + length;};
+function randomize() {index = Math.floor(Math.random() * (length + 1)) + length;}
 
-// gsap.to(".centered-box", { y: "-=10", rotate: 360, duration: 1.5 });
+function rigorousWindowHeight() {
+        const viewportHeight = window.innerHeight;
+        document.getElementsByClassName('gradient-box')[0].style.height = `${viewportHeight/4}px`;
+        document.getElementsByClassName('gradient-box')[1].style.height = `${viewportHeight/4}px`;
+    }
 
 
 
 function getOffset() {
-  let t = [-100,-90,-80,-70,-60,-50,-40,-30,-20,30,40,50,60,70,80,90,100]
-  return t[Math.floor(Math.random() * 17)]
+  let t = [-100,-90,-80,-70,-60,-50,-40,-30,-20,30,40,50,60,70,80,90,100];
+  return t[Math.floor(Math.random() * 17)];
 }
+
+window.addEventListener('load', rigorousWindowHeight);
+window.addEventListener('resize', rigorousWindowHeight);
