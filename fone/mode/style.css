@@ -18,7 +18,7 @@ body {
   min-height: 50px;
 /*   background-image: url(https://www.pngkey.com/png/full/101-1012700_white-transparent-paint-white-paint-streak-png.png);
   background-size: cover; */
-  background-color: rgb(58, 99, 46);
+  background-color: rgb(78, 125, 64);
 /*   position: absolute; */
 /*  center it in the page  */
 /*   top: 50%;
@@ -26,10 +26,10 @@ body {
   transform: translate(-50%, -50%); */
 /*  rounded edges  */
   border-radius: 25px;
-  transition: background-color 0.5s;
+/*   transition: background-color 0.5s; */
 }
 
-.centered-box:hover {
+/* .centered-box:hover {
   cursor: pointer;
   background-color: rgb(78, 125, 64);
 }
@@ -37,7 +37,7 @@ body {
 .centered-box:active {
   background-color: rgb(58, 99, 46);
   transition: none
-}
+} */
 
 .fist {
 /*   margin-top: -12px; */
