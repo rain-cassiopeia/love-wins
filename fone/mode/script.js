@@ -53,3 +53,13 @@ function getOffset() {
 
 window.addEventListener('load', rigorousWindowHeight);
 window.addEventListener('resize', rigorousWindowHeight);
+
+function checkWindowSize() {
+  if (window.innerWidth > 600) {
+    window.location.href = "/";
+  }
+}
+
+checkWindowSize();
+
+window.addEventListener('resize', checkWindowSize);
