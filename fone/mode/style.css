@@ -1,0 +1,92 @@
+body {
+  background: rgb(52, 100, 40);
+  overflow: hidden;
+}
+
+.daddy-box{
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.centered-box {
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.5));
+  min-width: 290px;
+  min-height: 50px;
+/*   background-image: url(https://www.pngkey.com/png/full/101-1012700_white-transparent-paint-white-paint-streak-png.png);
+  background-size: cover; */
+  background-color: rgb(58, 99, 46);
+/*   position: absolute; */
+/*  center it in the page  */
+/*   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+/*  rounded edges  */
+  border-radius: 25px;
+  transition: background-color 0.5s;
+}
+
+.centered-box:hover {
+  cursor: pointer;
+  background-color: rgb(78, 125, 64);
+}
+
+.centered-box:active {
+  background-color: rgb(58, 99, 46);
+  transition: none
+}
+
+.fist {
+/*   margin-top: -12px; */
+  font-family: "New Rocker", system-ui;
+  font-size: 32px;
+  line-height: 50px;
+  color: #ba8c00;
+/*   -webkit-text-stroke: 1px #FFD700; */
+  -webkit-text-stroke: 1px black;
+  padding: 10px;
+  width: 50%; 
+  height: 50px;
+  box-sizing: border-box; /* Includes padding and border in the width */
+  float: left; /* makes them go next to each other? */
+  overflow: visible; /* lets text go past */
+  white-space: nowrap;
+  word-spacing: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fist--left {
+  @extend .fist;
+/*   color: red; */
+  text-align: right;
+}
+
+.fist--right {
+  @extend .fist;
+}
+
+.gradient-box {
+  z-index: 99;
+}
+
+.gradient-box--top {
+  @extend .gradient-box;
+  background: linear-gradient(to bottom, rgba(52, 100, 40, 1), rgba(52, 100, 40, 0));
+}
+
+.gradient-box--bottom {
+  @extend .gradient-box;
+  background: linear-gradient(to top, rgba(52, 100, 40, 1), rgba(52, 100, 40, 0));
+}
+
+.blank-box {
+  background-color: rgb(52, 100, 40);
+  height: 100vh;
+  z-index: 98;
+}
