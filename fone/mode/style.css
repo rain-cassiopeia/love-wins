@@ -90,3 +90,36 @@ body {
   height: 100vh;
   z-index: 98;
 }
+
+.mommy-box{
+  display: flex;
+  flex-direction: row;
+  top: 30px;
+  left: 40px;
+  position: absolute;
+}
+
+.lilbutton {
+  border: 1px solid #222;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #111;
+}
+
+.lilbutton:hover {
+  cursor: pointer;
+  background-color: rgb(37, 74, 27);
+}
+
+.lilbutton--left {
+  border-radius: 0px 0px 0px 20px;
+  border-right-style: none;
+  line-height: 34px;
+}
+
+.lilbutton--right {
+  border-radius: 0px 20px 0px 0px;
+  border-left-style: none;
+}
