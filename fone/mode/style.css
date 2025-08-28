@@ -93,7 +93,7 @@ body {
 
 .blank-box {
   background-color: rgb(52, 100, 40);
-  height: 100vh;
+  height: 100dvh;
   z-index: 98;
 }
 
