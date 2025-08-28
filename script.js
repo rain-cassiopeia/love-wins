@@ -1,30 +1,64 @@
-const first = ["bird", "love", "hate", "evil", "road", "stop", "butt", "stay", "wing", "dish", "milk", "boob", "long", "blow", "hand", "suck", "fuck", "skim", "junk", "don't", "read", "dead", "life", "fish", "fish", "fish", "wish", "bare", "bear", "open", "dead", "step", "woof", "bark", "worm", "dirt", "left", "yard", "land", "land", "dirt", "pant", "half", "baby", "nose", "butt", "mini", "tote", "hard", "high", "hang", "lofe", "cold", "wild", "walk", "hair", "meal", "tape", "moth", "blue", "meat", "base", "what", "rest", "rope", "high", "down", "pota", "pour", "skin", "only", "film", "post", "beef", "flip", "next", "open", "fuck", "eric", "bric", "late", "snow", "wolf", "work", "wolf", "epic", "text", "mush", "back", "baby", "hell", "bald", "bald", "bike", "tank", "jeep", "hunk", "tire", "soda", "that", "corn", "flip", "exit", "exit", "meat", "bone", "buzz", "best", "loot", "send", "dick", "barf", "elon", "very", "send", "rain", "rose", "fast", "they", "full", "pull", "bird", "help", "hair", "bite", "tree", "fore", "rack", "nest", "bird", "leaf", "rain", "lamb", "road", "butt", "soup", "hair", "shoe", "lone", "bike", "shoe", "dish", "drug", "ring", "body", "hang", "nail", "aloe", "fork", "face", "poke", "silk", "high", "give", "hell", "four", "love", "gust", "lots", "king", "root", "mock", "oven", "lava", "chip", "sand", "room", "next", "shut", "sams", "deez", "lost", "dead", "bold", "high", "book", "pant", "head", "fist", "grey", "lost", "good", "flip", "turn", "cave", "nose", "tech", "free", "snap", "whip", "duck", "duct", "over", "over", "cash", "wood", "come", "pray", "feed", "less", "rare", "rare", "life", "life", "ball", "keep", "deep", "nsfw", "pete", "peat", "door", "keep", "head", "golf", "away", "home", "roof", "char", "less", "bath", "beat", "cuck", "crab", "piss", "slow", "take", "tiny", "heat", "wavy", "door", "pass", "pass", "corn", "pita", "fake", "land", "karl", "stay", "stay", "hell", "slow", "doge", "soul", "bird", "love", "hate", "evil", "road", "stop", "butt", "stay", "wing", "dish", "milk", "boob", "long", "blow", "hand", "suck", "fuck", "skim", "junk", "don't", "read", "dead", "life", "fish", "fish", "fish", "wish", "bare", "bear", "open", "dead", "step", "woof", "bark", "worm", "dirt", "left", "yard", "land", "land", "dirt", "pant", "half", "baby", "nose", "butt", "mini", "tote", "hard", "high", "hang", "lofe", "cold", "wild", "walk", "hair", "meal", "tape", "moth", "blue", "meat", "base", "what", "rest", "rope", "high", "down", "pota", "pour", "skin", "only", "film", "post", "beef", "flip", "next", "open", "fuck", "eric", "bric", "late", "snow", "wolf", "work", "wolf", "epic", "text", "mush", "back", "baby", "hell", "bald", "bald", "bike", "tank", "jeep", "hunk", "tire", "soda", "that", "corn", "flip", "exit", "exit", "meat", "bone", "buzz", "best", "loot", "send", "dick", "barf", "elon", "very", "send", "rain", "rose", "fast", "they", "full", "pull", "bird", "help", "hair", "bite", "tree", "fore", "rack", "nest", "bird", "leaf", "rain", "lamb", "road", "butt", "soup", "hair", "shoe", "lone", "bike", "shoe", "dish", "drug", "ring", "body", "hang", "nail", "aloe", "fork", "face", "poke", "silk", "high", "give", "hell", "four", "love", "gust", "lots", "king", "root", "mock", "oven", "lava", "chip", "sand", "room", "next", "shut", "sams", "deez", "lost", "dead", "bold", "high", "book", "pant", "head", "fist", "grey", "lost", "good", "flip", "turn", "cave", "nose", "tech", "free", "snap", "whip", "duck", "duct", "over", "over", "cash", "wood", "come", "pray", "feed", "less", "rare", "rare", "life", "life", "ball", "keep", "deep", "nsfw", "pete", "peat", "door", "keep", "head", "golf", "away", "home", "roof", "char", "less", "bath", "beat", "cuck", "crab", "piss", "slow", "take", "tiny", "heat", "wavy", "door", "pass", "pass", "corn", "pita", "fake", "land", "karl", "stay", "stay", "hell", "slow", "doge", "soul", "bird", "love", "hate", "evil", "road", "stop", "butt", "stay", "wing", "dish", "milk", "boob", "long", "blow", "hand", "suck", "fuck", "skim", "junk", "don't", "read", "dead", "life", "fish", "fish", "fish", "wish", "bare", "bear", "open", "dead", "step", "woof", "bark", "worm", "dirt", "left", "yard", "land", "land", "dirt", "pant", "half", "baby", "nose", "butt", "mini", "tote", "hard", "high", "hang", "lofe", "cold", "wild", "walk", "hair", "meal", "tape", "moth", "blue", "meat", "base", "what", "rest", "rope", "high", "down", "pota", "pour", "skin", "only", "film", "post", "beef", "flip", "next", "open", "fuck", "eric", "bric", "late", "snow", "wolf", "work", "wolf", "epic", "text", "mush", "back", "baby", "hell", "bald", "bald", "bike", "tank", "jeep", "hunk", "tire", "soda", "that", "corn", "flip", "exit", "exit", "meat", "bone", "buzz", "best", "loot", "send", "dick", "barf", "elon", "very", "send", "rain", "rose", "fast", "they", "full", "pull", "bird", "help", "hair", "bite", "tree", "fore", "rack", "nest", "bird", "leaf", "rain", "lamb", "road", "butt", "soup", "hair", "shoe", "lone", "bike", "shoe", "dish", "drug", "ring", "body", "hang", "nail", "aloe", "fork", "face", "poke", "silk", "high", "give", "hell", "four", "love", "gust", "lots", "king", "root", "mock", "oven", "lava", "chip", "sand", "room", "next", "shut", "sams", "deez", "lost", "dead", "bold", "high", "book", "pant", "head", "fist", "grey", "lost", "good", "flip", "turn", "cave", "nose", "tech", "free", "snap", "whip", "duck", "duct", "over", "over", "cash", "wood", "come", "pray", "feed", "less", "rare", "rare", "life", "life", "ball", "keep", "deep", "nsfw", "pete", "peat", "door", "keep", "head", "golf", "away", "home", "roof", "char", "less", "bath", "beat", "cuck", "crab", "piss", "slow", "take", "tiny", "heat", "wavy", "door", "pass", "pass", "corn", "pita", "fake", "land", "karl", "stay", "stay", "hell", "slow", "doge", "soul"];
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
 
-const second = ["cock", "wins", "wins", "twin", "kill", "sign", "plug", "away", "span", "soap", "jugs", "jobs", "cock", "jobs", "jobs", "dick", "boys", "milk", "mail", "quit", "more", "line", "time", "bait", "bone", "head", "bone", "feet", "claw", "to work", "ends", "dads", "woof", "more", "love", "bike", "lane", "sale", "line", "mine", "path", "legs", "time", "goat", "hair", "hole", "golf", "bags", "core", "five", "outs", "of bred", "brew", "boar", "fast", "cuts", "worm", "worm", "ball", "ball", "ball", "ball", "next", "well", "play", "tops", "town", "toes", "over", "tags", "fans", "noir", "card", "stew", "turn", "page", "door", "ice!", "yung", "bung", "bird", "shoe", "pack", "wife", "gang", "fail", "edit", "room", "hand", "tees", "fire", "head", "spot", "lock", "tops", "wave", "of meat", "mark", "cans", "guy?", "cobs", "flop", "sign", "here", "head", "meal", "book", "buds", "drop", "nude", "pics", "bags", "musk", "much", "help", "drop", "gold", "food", "them", "moon", "door", "poop", "line", "line", "mark", "bark", "head", "of ribs", "of rats", "nest", "pile", "boot", "chop", "rage", "chin", "cans", "loss", "lace", "wolf", "rack", "rack", "rack", "ring", "worm", "wash", "nail", "file", "vera", "lift", "lift", "ball", "worm", "heel", "head", "yeah", "teen", "bite", "of wind", "of love", "shit", "beer", "tail", "mitt", "lamp", "wich", "wich", "mate", "time", "down", "club", "nuts", "hope", "hang", "font", "tide", "nook", "legs", "ache", "bump", "hair", "sock", "liar", "over", "page", "dive", "dive", "deck", "wifi", "chat", "lash", "bill", "tape", "flow", "head", "flow", "work", "back", "tell", "back", "is more", "find", "bird", "is good", "is shit", "is life", "sake", "seek", "cock", "sake", "moss", "knob", "warm", "lock", "cart", "game", "game", "view", "coal", "is more", "robe", "meat", "room", "claw", "kink", "down", "it easy", "home", "wave", "hair", "code", "word", "code", "chip", "chip", "news", "lord", "marx", "gold", "cool", "yeah", "poke", "coin", "food", "cock", "wins", "wins", "twin", "kill", "sign", "plug", "away", "span", "soap", "jugs", "jobs", "cock", "jobs", "jobs", "dick", "boys", "milk", "mail", "quit", "more", "line", "time", "bait", "bone", "head", "bone", "feet", "claw", "to work", "ends", "dads", "woof", "more", "love", "bike", "lane", "sale", "line", "mine", "path", "legs", "time", "goat", "hair", "hole", "golf", "bags", "core", "five", "outs", "of bred", "brew", "boar", "fast", "cuts", "worm", "worm", "ball", "ball", "ball", "ball", "next", "well", "play", "tops", "town", "toes", "over", "tags", "fans", "noir", "card", "stew", "turn", "page", "door", "ice!", "yung", "bung", "bird", "shoe", "pack", "wife", "gang", "fail", "edit", "room", "hand", "tees", "fire", "head", "spot", "lock", "tops", "wave", "of meat", "mark", "cans", "guy?", "cobs", "flop", "sign", "here", "head", "meal", "book", "buds", "drop", "nude", "pics", "bags", "musk", "much", "help", "drop", "gold", "food", "them", "moon", "door", "poop", "line", "line", "mark", "bark", "head", "of ribs", "of rats", "nest", "pile", "boot", "chop", "rage", "chin", "cans", "loss", "lace", "wolf", "rack", "rack", "rack", "ring", "worm", "wash", "nail", "file", "vera", "lift", "lift", "ball", "worm", "heel", "head", "yeah", "teen", "bite", "of wind", "of love", "shit", "beer", "tail", "mitt", "lamp", "wich", "wich", "mate", "time", "down", "club", "nuts", "hope", "hang", "font", "tide", "nook", "legs", "ache", "bump", "hair", "sock", "liar", "over", "page", "dive", "dive", "deck", "wifi", "chat", "lash", "bill", "tape", "flow", "head", "flow", "work", "back", "tell", "back", "is more", "find", "bird", "is good", "is shit", "is life", "sake", "seek", "cock", "sake", "moss", "knob", "warm", "lock", "cart", "game", "game", "view", "coal", "is more", "robe", "meat", "room", "claw", "kink", "down", "it easy", "home", "wave", "hair", "code", "word", "code", "chip", "chip", "news", "lord", "marx", "gold", "cool", "yeah", "poke", "coin", "food", "cock", "wins", "wins", "twin", "kill", "sign", "plug", "away", "span", "soap", "jugs", "jobs", "cock", "jobs", "jobs", "dick", "boys", "milk", "mail", "quit", "more", "line", "time", "bait", "bone", "head", "bone", "feet", "claw", "to work", "ends", "dads", "woof", "more", "love", "bike", "lane", "sale", "line", "mine", "path", "legs", "time", "goat", "hair", "hole", "golf", "bags", "core", "five", "outs", "of bred", "brew", "boar", "fast", "cuts", "worm", "worm", "ball", "ball", "ball", "ball", "next", "well", "play", "tops", "town", "toes", "over", "tags", "fans", "noir", "card", "stew", "turn", "page", "door", "ice!", "yung", "bung", "bird", "shoe", "pack", "wife", "gang", "fail", "edit", "room", "hand", "tees", "fire", "head", "spot", "lock", "tops", "wave", "of meat", "mark", "cans", "guy?", "cobs", "flop", "sign", "here", "head", "meal", "book", "buds", "drop", "nude", "pics", "bags", "musk", "much", "help", "drop", "gold", "food", "them", "moon", "door", "poop", "line", "line", "mark", "bark", "head", "of ribs", "of rats", "nest", "pile", "boot", "chop", "rage", "chin", "cans", "loss", "lace", "wolf", "rack", "rack", "rack", "ring", "worm", "wash", "nail", "file", "vera", "lift", "lift", "ball", "worm", "heel", "head", "yeah", "teen", "bite", "of wind", "of love", "shit", "beer", "tail", "mitt", "lamp", "wich", "wich", "mate", "time", "down", "club", "nuts", "hope", "hang", "font", "tide", "nook", "legs", "ache", "bump", "hair", "sock", "liar", "over", "page", "dive", "dive", "deck", "wifi", "chat", "lash", "bill", "tape", "flow", "head", "flow", "work", "back", "tell", "back", "is more", "find", "bird", "is good", "is shit", "is life", "sake", "seek", "cock", "sake", "moss", "knob", "warm", "lock", "cart", "game", "game", "view", "coal", "is more", "robe", "meat", "room", "claw", "kink", "down", "it easy", "home", "wave", "hair", "code", "word", "code", "chip", "chip", "news", "lord", "marx", "gold", "cool", "yeah", "poke", "coin", "food"];
+// all of this is necessary all of the time to make firebase firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyCOV4iAQziteXkvOjF6ZBlNFsYTYDwECSw",
+  authDomain: "raindocs-a679e.firebaseapp.com",
+  projectId: "raindocs-a679e",
+  storageBucket: "raindocs-a679e.appspot.com",
+  messagingSenderId: "25079591688",
+  appId: "1:25079591688:web:03cabb5eaea9707c86f2bd",
+  measurementId: "G-TGE4W3YEQN"
+};
 
+// Init
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
-const length = 243;
-var index = length+1;
+// Document reference
+const wordsDoc = doc(db, "knuckles", "pairs");
 
-var first_str = "";
-var second_str = "";
+// i kind of hate that i have to initialize these like this
+var index = 1;
+var length = 0;
 
-for (let i = 0; i < length * 3; i++) {
-  first_str += first[i] + "<br>"
-  second_str += second[i] + "<br>"
+async function loadLists() {
+  try {
+    const snap = await getDoc(wordsDoc);
+    if (snap.exists()) {
+      const data = snap.data();
+      // renderFists(data.right_hand || [], data.left_hand || []);
+      var first = data.right_hand.concat(data.right_hand.concat(data.right_hand));
+      var second = data.left_hand.concat(data.left_hand.concat(data.left_hand));
+      
+      length = data.left_hand.length;
+      index = length + 1;
+
+      var first_str = "";
+      var second_str = "";
+
+      for (let i = 0; i < length * 3; i++) {
+        first_str += first[i] + "<br>"
+        second_str += second[i] + "<br>"
+      }
+
+      const fists = document.getElementsByClassName("fist");
+      fists[0].innerHTML = first_str;
+      fists[1].innerHTML = second_str;
+      
+    } else {
+      const fists = document.getElementsByClassName("fist");
+      fists[0].innerHTML = "smth";
+      fists[1].innerHTML = "brok";
+    }
+  } catch (e) {
+    console.error("Error loading:", e);
+  }
+  spin2(); //moved into the async function so everything is initialized
 }
 
-const fists = document.getElementsByClassName("fist");
-fists[0].innerHTML = first_str;
-fists[1].innerHTML = second_str;
-
-spin2();
-
-// function spin() {
-//   const fists = document.getElementsByClassName("fist");
-//   fists[0].innerHTML = first.at(index);
-//   fists[1].innerHTML = second.at(index);
-// };
+loadLists();
 
 function spin2() {
   //the 12 accounts for centering in the box
@@ -44,22 +78,18 @@ function rigorousWindowHeight() {
         document.getElementsByClassName('gradient-box')[1].style.height = `${viewportHeight/4}px`;
     }
 
-
-
 function getOffset() {
   let t = [-100,-90,-80,-70,-60,-50,-40,-30,-20,30,40,50,60,70,80,90,100];
   return t[Math.floor(Math.random() * 17)];
 }
 
+//unfortunately coudlnt do normal onclick cause i tested this in codepen :p
+//no IDE "full web" development goes brrr
+document.querySelector(".centered-box").addEventListener("click", () => {
+  randomize();
+  spin2();
+});
+
 window.addEventListener('load', rigorousWindowHeight);
 window.addEventListener('resize', rigorousWindowHeight);
 
-function checkWindowSize() {
-  if (window.innerWidth <= 600) {
-    window.location.href = "/fone/mode";
-  }
-}
-
-checkWindowSize();
-
-window.addEventListener('resize', checkWindowSize);
