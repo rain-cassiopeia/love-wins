@@ -76,7 +76,7 @@ function spin2() {
 function randomize() {index = Math.floor(Math.random() * (length + 1)) + length;}
 
 function rigorousWindowHeight() {
-        const viewportHeight = window.innerHeight;
+        const viewportHeight = window.visualViewport?.height || window.innerHeight;
         document.getElementsByClassName('gradient-box')[0].style.height = `${viewportHeight/4}px`;
         document.getElementsByClassName('gradient-box')[1].style.height = `${viewportHeight/4}px`;
     }
