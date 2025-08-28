@@ -64,6 +64,9 @@ function spin2() {
   //the 12 accounts for centering in the box
   let offset1 = getOffset()
   let offset2 = getOffset()
+  if (offset1 == offset2) {
+    offset2 = getOffset() //i know this should be a while loop but for some strange reason im averse to using one. couldnt tell you why. superstition, perhaps.
+  }
   gsap.set(".fist--left", {y: ((index + offset1) * -50) - 12})
   gsap.to(".fist--left", {y: (index * -50)-12, duration: 2})
   gsap.set(".fist--right", {y: ((index + offset2) * -50) - 12})
