@@ -36,3 +36,35 @@ body {
   width: 50px;
 }
 
+.mommy-box{
+  display: flex;
+  flex-direction: row;
+  top: 30px;
+  left: 40px;
+  position: absolute;
+}
+
+.lilbutton {
+  border: 1px solid #222;
+  width: 40px;
+  height: 30px;
+  line-height: 34px;
+  text-align: center;
+  color: #111;
+}
+
+.lilbutton:hover {
+  cursor: pointer;
+  background-color: rgb(133, 76, 166);
+}
+
+.lilbutton--left {
+  border-radius: 0px 0px 0px 20px;
+  border-right-style: none;
+}
+
+.lilbutton--right {
+  border-radius: 0px 20px 0px 0px;
+  border-left-style: none;
+}
+
